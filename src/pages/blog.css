@@ -209,7 +209,8 @@ body{
 }
 .left{
     padding: 12px;
-    max-width: 75%;
+    width: 75%;
+    box-sizing: border-box;
 }
 .name-blog-input{
     padding-bottom: 36px;
@@ -231,7 +232,8 @@ body{
 .right{
     padding: 24px 12px;
     margin-top: 34px;
-    max-width: 25%;
+    width: 25%;
+    box-sizing: border-box;
 }
 .add-image{
     top: 60px;
