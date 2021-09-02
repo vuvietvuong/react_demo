@@ -11,18 +11,11 @@ const Blog = () =>{
             <Box className="header">
                 <Box className="header-content">
                     <img src="/image/553451.jpg" alt="" />
-                    <Button>
-                        <Box component="span" >
-                            r
-                        </Box>
-                    </Button>
+                    <Button>r</Button>
                 </Box>
             </Box>
             <Box className="container">
                 <Box className="sidebar">
-                    <Box className="blog">
-
-                    </Box>
                 </Box>
                 <Box className="content">
                     <Box className="title">
@@ -89,7 +82,6 @@ const Blog = () =>{
                                             <Button>
                                                 Tải lên
                                             </Button>
-                                            {/* <Input type="file" className="custom-file-input" hidden/> */}
                                         </Box>
                                     </Box>
                                 </Box>
