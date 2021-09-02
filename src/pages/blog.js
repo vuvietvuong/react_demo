@@ -1,101 +1,104 @@
 import React from "react";
 import "./blog.css";
+import { Box, Button, Typography, Input, Checkbox,
+    InputLabel,
+    Select,
+} from '@material-ui/core';
 
 const Blog = () =>{
     return(
-        <div>
-            <div className="header">
-                <div className="header-content">
+        <Box>
+            <Box className="header">
+                <Box className="header-content">
                     <img src="/image/553451.jpg" alt="" />
-                    <button>
-                        <span>
+                    <Button>
+                        <Box component="span" >
                             r
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <div className="container">
-                <div className="sidebar">
-                    <div className="blog">
+                        </Box>
+                    </Button>
+                </Box>
+            </Box>
+            <Box className="container">
+                <Box className="sidebar">
+                    <Box className="blog">
 
-                    </div>
-                </div>
-                <div className="content">
-                    <div className="title">
-                        <h6>Tạo bài đăng mới</h6>
-                        <div>
-                            <button className="add-button">Tạo mới</button>
-                            <button className="up-button">Đăng bài</button>
-                        </div>
-                    </div>
-                    <div className="infor-blog">
-                        <div className="infor">
-                            <p className="infor-title">Thông tin bài đăng</p>
-                            <div>
-                                <p>Hiển thị trên HomePage</p>
-                                <input type="checkbox"/>
-                                <button>Lưu nháp</button>
-                            </div>
-                        </div>
-                        <div className="infor-category">
-                            <div className="category">
-                                <div className="category-title">Danh mục</div>
-                                <select name="" id="">
-                                    <option value="">Tất cả</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                            <div className="status">
-                                <div className="status-title">Trạng thái
-                                </div>
-                                <div className="status-content">
-                                    <input type="text" value="Bản nháp" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="add-blog">
-                        <div className="blog-content">
-                            <div className="lang">
-                                <button>Tiếng Việt</button>
-                            </div>
-                            <div className="content-detail">
-                                <div className="left">
-                                    <div className="name-blog-input">
-                                        <p className="name-blog">Tên bài viết</p>
-                                        <input type="text" placeholder="Nhập tên bài viết"/>
-                                    </div>
-                                    <div className="name-blog-input">
-                                        <p className="name-blog">Mô tả bài viết</p>
-                                        <input type="text" placeholder="Nhập mô tả bài viết"/>
-                                    </div>
-                                    <div className="name-blog-input">
-                                        <p className="name-blog">Tên bài viết</p>
-                                        <input type="text" placeholder="Nhập tên bài viết"/>
-                                    </div>
-                                </div>
-                                <div className="right">
-                                    <div className="add-image">
+                    </Box>
+                </Box>
+                <Box className="content">
+                    <Box className="title">
+                        <Typography variant="h6">Tạo bài đăng mới</Typography>
+                        <Box>
+                            <Button className="add-button">Tạo mới</Button>
+                            <Button className="up-button">Đăng bài</Button>
+                        </Box>
+                    </Box>
+                    <Box className="infor-blog">
+                        <Box className="infor">
+                            <Box component="p" className="infor-title">Thông tin bài đăng</Box>
+                            <Box>
+                                <Box component="p">Hiển thị trên HomePage</Box>
+                                <Checkbox/>
+                                <Button>Lưu nháp</Button>
+                            </Box>
+                        </Box>
+                        <Box className="infor-category">
+                            <Box className="category">
+                                <InputLabel className="category-title">Danh mục</InputLabel>
+                                <Select className="select" name="" id="">
+                                    <option  value="">Tất cả</option >
+                                    <option  value="">1</option >
+                                    <option  value="">2</option >
+                                    <option  value="">3</option >
+                                </Select>
+                            </Box>
+                            <Box className="status">
+                                <InputLabel className="status-title">Trạng thái</InputLabel>
+                                <Box className="status-content">
+                                    <Input type="text" value="Bản nháp" />
+                                </Box>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box className="add-blog">
+                        <Box className="blog-content">
+                            <Box className="lang">
+                                <Button>Tiếng Việt</Button>
+                            </Box>
+                            <Box className="content-detail">
+                                <Box className="left">
+                                    <Box className="name-blog-input">
+                                        <Box component="p" className="name-blog">Tên bài viết</Box>
+                                        <Input type="text" placeholder="Nhập tên bài viết"/>
+                                    </Box>
+                                    <Box className="name-blog-input">
+                                        <Box component="p" className="name-blog">Tên bài viết</Box>
+                                        <Input type="text" placeholder="Nhập tên bài viết"/>
+                                    </Box>
+                                    <Box className="name-blog-input">
+                                        <Box component="p" className="name-blog">Tên bài viết</Box>
+                                        <Input type="text" placeholder="Nhập tên bài viết"/>
+                                    </Box>
+                                </Box>
+                                <Box className="right">
+                                    <Box className="add-image">
                                         <img src="/image/553451.jpg" alt="" />
-                                        <p>
+                                        <Box component="p">
                                             Ảnh cover bài viết
-                                        </p>
-                                        <div>
-                                            <button>
+                                        </Box>
+                                        <Box>
+                                            <Button>
                                                 Tải lên
-                                            </button>
-                                            <input type="file" className="custom-file-input" hidden/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                            </Button>
+                                            {/* <Input type="file" className="custom-file-input" hidden/> */}
+                                        </Box>
+                                    </Box>
+                                </Box>
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
     );
 }
 export default Blog;
